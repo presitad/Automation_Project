@@ -45,5 +45,5 @@ done
 cat /etc/cron.d/automation  > /dev/null 2>&1
 if [ $? != 0 ]
 then
-        echo "* * * * *  root /root/Automation_Project/automation.sh" >>  /etc/cron.d/automation
+        echo "0 0 * * *  root /root/Automation_Project/automation.sh" >>  /etc/cron.d/automation
 fi
